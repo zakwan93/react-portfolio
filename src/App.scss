@@ -1,0 +1,18 @@
+//Responnsive Breakpoints
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px;
+$bp-medium: 50em; //800px;
+$bp-small: 37.5em; // 600px;
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 85vh repeat(7, min-content);
+  grid-template-columns:
+    [sidebar-start]minmax(min-content, 8rem) [sidebar-end full-start]
+    1fr [full-end email-start] minmax(min-content, 8rem) [email-end];
+
+  @media only screen and(max-width: $bp-large) {
+    grid-template-rows: min-content 85vh repeat(8, min-content);
+  }
+  // display: none;
+}

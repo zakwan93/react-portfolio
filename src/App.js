@@ -1,10 +1,11 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
+import Navigation from "./components/Navigation/Navigation.component";
 
 function App() {
   return (
-    <div className="App">
-      <h1>ZB</h1>
+    <div className="container">
+      <Navigation />
     </div>
   );
 }
