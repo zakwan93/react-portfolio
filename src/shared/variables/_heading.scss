@@ -1,0 +1,21 @@
+@import "./base.scss";
+
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.Heading1 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: $heading1-color;
+  line-height: 1;
+}
+
+.Heading2 {
+  @extend %heading;
+  font-size: 5rem;
+  color: $heading2-color;
+  // font-style: italic;
+  line-height: 1;
+}

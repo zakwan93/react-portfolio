@@ -1,4 +1,4 @@
-@import "../../../shared/variables/_base.scss";
+@import "../../shared/variables/_base.scss";
 
 .Resume {
   transition: all 0.5s;
@@ -10,7 +10,7 @@
     padding: 1rem 2rem;
     text-decoration: none;
     color: $heading1-color;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     border: 1px solid $heading1-color;
     border-radius: 0.3rem;
 

@@ -7,7 +7,7 @@
   counter-increment: item 1;
   align-self: center;
   height: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 
   & a {
     transition: all 0.5s;
@@ -35,8 +35,9 @@
   &::before {
     content: "0" counter(item) ".";
     text-align: right;
+    align-self: center;
     color: rgba($heading1-color, 0.7);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-right: 0.5rem;
   }
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import Logo from "../../Logo/Logo";
-// import { Document } from "react-pdf";
-import Resume from "../Resume/Resume";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
+import Pdf from "../../../assets/Zakwan_FullStack.pdf";
+import Link from "../../Link/Link.jsx";
 // import "./Toolbar.scss";
 
 import classes from "./Toolbar.scss";
@@ -16,7 +16,7 @@ const toolbar = props => (
       <NavigationItems />
     </nav>
     <div className={classes.DesktopOnly}>
-      <Resume />
+      <Link name="Resume" link={Pdf} />
     </div>
   </div>
 );
