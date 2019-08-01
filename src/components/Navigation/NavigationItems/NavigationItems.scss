@@ -1,0 +1,8 @@
+@import "../../../shared/variables/_base.scss";
+
+.NavigationItems {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: outside none none;
+  align-items: center;
+}

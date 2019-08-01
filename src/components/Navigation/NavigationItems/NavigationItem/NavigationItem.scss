@@ -1,0 +1,38 @@
+@import "../../../../shared/variables/_base.scss";
+
+.NavigationItem {
+  margin: 0px 2rem;
+  position: relative;
+  counter-increment: item 1;
+  align-self: center;
+  font-size: 1.8rem;
+
+  & a {
+    transition: all 0.5s;
+
+    &,
+    &:link,
+    &:visited {
+      color: $color-grey-dark-2;
+      font-size: inherit;
+      text-decoration: none;
+    }
+
+    &.active {
+      color: $color-grey-light-2;
+      border-bottom: 2px solid $color-grey-dark-2;
+    }
+
+    &:hover {
+      transform: translateY(-0.5rem);
+    }
+  }
+
+  &::before {
+    content: "0" counter(item) ".";
+    text-align: right;
+    color: rgba($color-grey-light-2, 0.7);
+    font-size: 1.6rem;
+    margin-right: 0.5rem;
+  }
+}

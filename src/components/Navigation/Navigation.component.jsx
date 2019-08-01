@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import "./Navigation.style.scss";
+import classes from "./Navigation.style.scss";
 
 export default function Navigation() {
   return (
-    <div className="nav">
+    <div className={classes.nav}>
       <h1 className="logo">ZB</h1>
       <nav>
         <ol>
