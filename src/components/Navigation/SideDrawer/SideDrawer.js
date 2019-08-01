@@ -1,9 +1,10 @@
 import React from "react";
 // import Logo from "../../Logo/Logo";
 import NavigationItems from "../NavigationItems/NavigationItems";
-import Resume from "../Resume/Resume";
 import Backdrop from "../../UI/Backdrop/Backdrop";
 import Aux from "../../../hoc/Aux";
+import Pdf from "../../../assets/Zakwan_FullStack.pdf";
+import Link from "../../Link/Link.jsx";
 
 import classes from "./SideDrawer.scss";
 
@@ -20,7 +21,7 @@ const sideDrawer = props => {
         <nav>
           <NavigationItems />
         </nav>
-        <Resume />
+        <Link name="Resume" link={Pdf} />
       </div>
     </Aux>
   );
