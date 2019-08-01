@@ -1,0 +1,46 @@
+@import "../../shared/variables/_base.scss";
+
+.Email {
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+
+  &::after {
+    content: "";
+    width: 0.1rem;
+    height: 12vh;
+    background-color: $icon-color;
+    margin: 1.5rem auto 0;
+
+    @media (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $icon-color;
+      font-size: 1.6rem;
+      letter-spacing: 0.2rem;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: translateY(-0.5rem);
+        color: $heading1-color;
+      }
+    }
+
+    @media (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+}

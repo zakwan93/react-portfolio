@@ -1,0 +1,75 @@
+@import "../../shared/variables/_base.scss";
+
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+.Header {
+  max-width: 100rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 15rem 0;
+
+  @media (max-width: $bp-large) {
+    padding: 15rem 10rem;
+  }
+
+  @media (max-width: $bp-small) {
+    padding: 5rem 4rem;
+  }
+
+  & div {
+    width: 100%;
+  }
+
+  &__hi {
+    @extend %heading;
+    font-size: 1.8rem;
+    color: $heading1-color;
+    margin: 0 0 2rem 0.3rem;
+  }
+
+  &__title,
+  &__subtitle {
+    @extend %heading;
+    font-size: 7rem;
+    line-height: 1.1;
+
+    @media (max-width: $bp-large) {
+      font-size: 6rem;
+    }
+    @media (max-width: $bp-small) {
+      font-size: 5rem;
+    }
+  }
+
+  &__title {
+    color: $heading2-color;
+  }
+
+  &__subtitle {
+    color: $content-color;
+  }
+
+  .Blurb {
+    margin: 2.5rem 0 5rem 0;
+    max-width: 50rem;
+    font-size: 1.6rem;
+
+    p {
+      margin: 0 0 1.5rem;
+      letter-spacing: 0.1rem;
+
+      span {
+        color: $heading1-color;
+      }
+    }
+  }
+}

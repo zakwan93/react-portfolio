@@ -1,11 +1,21 @@
 // COLOR VARIABLES
-$color-primary-dark: #282726;
+// $color-primary-dark: #282726;
 
-$color-grey-light-1: #d6cab0;
-$color-grey-light-2: #fcfaf1;
+// $color-grey-light-1: #d6cab0;
+// $color-grey-light-2: #fcfaf1;
 
-$color-grey-dark-1: #54504c;
-$color-grey-dark-2: #86817c;
+// $color-grey-dark-1: #54504c;
+// $color-grey-dark-2: #86817c;
+$color-primary-dark: rgb(10, 25, 47);
+
+$content-color: rgb(136, 146, 176);
+
+$heading1-color: rgb(100, 255, 218);
+$heading2-color: rgb(230, 241, 255);
+
+$icon-color: rgb(168, 178, 209);
+
+$disble-color: rgb(96, 106, 134);
 
 // FONT VARIABLES
 $font-primary: "Nunito", sans-serif;
@@ -16,30 +26,3 @@ $bp-largest: 75em; // 1200px
 $bp-large: 62.5em; // 1000px;
 $bp-medium: 50em; //800px;
 $bp-small: 37.5em; // 600px;
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-
-  @media only screen and(max-width: $bp-largest) {
-    font-size: 50%;
-  }
-}
-
-body {
-  font-family: $font-primary;
-  background-color: $color-primary-dark;
-  color: $color-grey-light-1;
-  font-weight: 300;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
