@@ -9,14 +9,14 @@
   & a:focus {
     padding: 1rem 2rem;
     text-decoration: none;
-    color: $color-grey-light-1;
+    color: $heading1-color;
     font-size: 1.6rem;
-    border: 1px solid rgba($color-grey-light-1, 0.5);
+    border: 1px solid $heading1-color;
     border-radius: 0.3rem;
 
     &:hover,
     &:focus {
-      background-color: rgba($color-grey-dark-1, 0.5);
+      background-color: rgba($heading1-color, 0.1);
       transform: translateY(-0.5rem);
     }
   }

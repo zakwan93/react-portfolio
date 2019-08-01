@@ -15,14 +15,14 @@
     &,
     &:link,
     &:visited {
-      color: $color-grey-dark-2;
+      color: $content-color;
       font-size: inherit;
       text-decoration: none;
     }
 
     &.active {
-      color: $color-grey-light-2;
-      border-bottom: 2px solid $color-grey-dark-2;
+      color: $heading1-color;
+      border-bottom: 2px solid $content-color;
     }
 
     &:hover,
@@ -34,7 +34,7 @@
   &::before {
     content: "0" counter(item) ".";
     text-align: right;
-    color: rgba($color-grey-light-2, 0.7);
+    color: rgba($heading1-color, 0.7);
     font-size: 1.6rem;
     margin-right: 0.5rem;
   }

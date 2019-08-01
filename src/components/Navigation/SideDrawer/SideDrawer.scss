@@ -12,12 +12,12 @@
   top: 0;
   right: 0;
   z-index: 200;
-  background-color: rgba($color-grey-dark-1, 0.9);
+  background-color: rgba($color-primary-dark, 0.9);
   padding: 32px 16px;
   box-sizing: border-box;
   transition: transform 0.3s ease-out;
-  border-bottom: 15px solid $color-grey-light-1;
-  border-top: 15px solid $color-grey-light-1;
+  border-bottom: 15px solid $heading1-color;
+  border-top: 15px solid $heading1-color;
 }
 
 @media (min-width: $bp-medium) {

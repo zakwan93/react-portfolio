@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Aux from "../../hoc/Aux";
 import Toolbar from "../Navigation/Toolbar/Toolbar";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawer";
+import SocialIcon from "../Social-Icon/Social-icon.jsx";
 
 class Layout extends Component {
   state = {
@@ -28,6 +29,7 @@ class Layout extends Component {
           open={this.state.showSideDrawer}
           closed={this.sideDrawerClosedHandler}
         />
+        <SocialIcon />
         <main>{this.props.children}</main>
       </Aux>
     );

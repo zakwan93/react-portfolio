@@ -9,7 +9,7 @@ import classes from "./Toolbar.scss";
 import NavigationItems from "../NavigationItems/NavigationItems";
 
 const toolbar = props => (
-  <header className={classes.Toolbar}>
+  <div className={classes.Toolbar}>
     <Logo />
     <DrawerToggle clicked={props.drawerToggleClicked} />
     <nav className={classes.DesktopOnly}>
@@ -18,7 +18,7 @@ const toolbar = props => (
     <div className={classes.DesktopOnly}>
       <Resume />
     </div>
-  </header>
+  </div>
 );
 
 export default toolbar;
