@@ -1,0 +1,32 @@
+@import "../../../../shared/variables/_base.scss";
+
+.DrawerToggle {
+  width: 35px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+
+  & div {
+    width: 100%;
+    height: 3px;
+    background-color: $color-grey-light-1;
+
+    &:nth-child(2) {
+      width: 75%;
+      align-self: flex-start;
+    }
+
+    &:last-child {
+      width: 50%;
+      align-self: flex-start;
+    }
+  }
+
+  @media (min-width: $bp-medium) {
+    display: none;
+  }
+}

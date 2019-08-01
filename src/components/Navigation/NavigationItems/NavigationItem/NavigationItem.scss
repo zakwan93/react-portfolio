@@ -3,8 +3,10 @@
 .NavigationItem {
   margin: 0px 2rem;
   position: relative;
+  display: flex;
   counter-increment: item 1;
   align-self: center;
+  height: 100%;
   font-size: 1.8rem;
 
   & a {
@@ -23,7 +25,8 @@
       border-bottom: 2px solid $color-grey-dark-2;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       transform: translateY(-0.5rem);
     }
   }
@@ -34,5 +37,16 @@
     color: rgba($color-grey-light-2, 0.7);
     font-size: 1.6rem;
     margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: $bp-medium) {
+  .NavigationItem {
+    margin: 1rem 0;
+    font-size: 2.5rem;
+
+    &::before {
+      font-size: inherit;
+    }
   }
 }

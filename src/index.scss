@@ -1,29 +1,4 @@
-// COLOR VARIABLES
-$color-primary-dark: #282726;
-
-$color-grey-light-1: #d6cab0;
-$color-grey-light-2: #fcfaf1;
-
-$color-grey-dark-1: #54504c;
-$color-grey-dark-2: #86817c;
-
-// FONT VARIABLES
-$font-primary: "Nunito", sans-serif;
-$font-display: "Josefin Sans", sans-serif;
-
-//Responnsive Breakpoints
-$bp-largest: 75em; // 1200px
-$bp-large: 62.5em; // 1000px;
-$bp-medium: 50em; //800px;
-$bp-small: 37.5em; // 600px;
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "../src/shared/variables/_base.scss";
 
 html {
   box-sizing: border-box;

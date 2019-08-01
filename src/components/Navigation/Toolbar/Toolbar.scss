@@ -1,3 +1,5 @@
+@import "../../../shared/variables/_base.scss";
+
 .Toolbar {
   padding: 2rem;
   display: flex;
@@ -14,4 +16,10 @@
 
 .Toolbar nav {
   height: 100%;
+}
+
+@media (max-width: $bp-medium) {
+  .DesktopOnly {
+    display: none;
+  }
 }

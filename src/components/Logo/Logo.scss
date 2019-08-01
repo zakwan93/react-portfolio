@@ -5,3 +5,9 @@
   font-family: $font-display;
   align-self: center;
 }
+
+@media (max-width: $bp-medium) {
+  .Logo {
+    align-self: flex-start;
+  }
+}

@@ -6,3 +6,9 @@
   list-style: outside none none;
   align-items: center;
 }
+
+@media (max-width: $bp-medium) {
+  .NavigationItems {
+    flex-flow: column;
+  }
+}

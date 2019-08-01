@@ -5,7 +5,8 @@
 
   & a,
   & a:link,
-  & a:visited {
+  & a:visited,
+  & a:focus {
     padding: 1rem 2rem;
     text-decoration: none;
     color: $color-grey-light-1;
@@ -13,9 +14,16 @@
     border: 1px solid rgba($color-grey-light-1, 0.5);
     border-radius: 0.3rem;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: rgba($color-grey-dark-1, 0.5);
       transform: translateY(-0.5rem);
     }
+  }
+}
+
+@media (max-width: $bp-medium) {
+  .Resume {
+    margin: 4rem 0;
   }
 }

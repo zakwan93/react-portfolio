@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../../Logo/Logo";
 // import { Document } from "react-pdf";
 import Resume from "../Resume/Resume";
+import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 // import "./Toolbar.scss";
 
 import classes from "./Toolbar.scss";
@@ -10,10 +11,13 @@ import NavigationItems from "../NavigationItems/NavigationItems";
 const toolbar = props => (
   <header className={classes.Toolbar}>
     <Logo />
-    <nav>
+    <DrawerToggle clicked={props.drawerToggleClicked} />
+    <nav className={classes.DesktopOnly}>
       <NavigationItems />
     </nav>
-    <Resume />
+    <div className={classes.DesktopOnly}>
+      <Resume />
+    </div>
   </header>
 );
 
