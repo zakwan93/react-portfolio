@@ -28,6 +28,7 @@
     &:hover,
     &:focus {
       transform: translateY(-0.5rem);
+      color: $heading1-color;
     }
   }
 

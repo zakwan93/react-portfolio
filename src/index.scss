@@ -1,23 +1,5 @@
 @import "../src/shared/variables/_base.scss";
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-
-  @media only screen and(max-width: $bp-largest) {
-    font-size: 50%;
-  }
-}
-
-body {
-  font-family: $font-primary;
-  background-color: $color-primary-dark;
-  color: $content-color;
-  font-weight: 300;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
+@import "../src/shared/variables/_root.scss";
 
 .show-on-scroll {
   opacity: 0;
